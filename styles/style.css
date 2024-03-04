@@ -82,13 +82,14 @@ header > ul {
     position: relative;
     background-image: url('/img/house.jpg');
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
 .hero::before {
     position: absolute;
     content: '';
-    background-color: #00000098;
+    background-color: #000000b7;
     top: 0;
     left: 0;
     width: 100%;
@@ -99,19 +100,22 @@ header > ul {
     position: relative;
     max-width: 1140px;
     margin: 0 auto;
-    padding: 70px 0 60px;
+    padding: 120px 0 120px;
     z-index: 10;
     color: white;
 }
 
 .hero-title {
-    font-size: 46px;
+    font-size: 52px;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .hero-list {
     padding-left: 20px;
+    list-style-image: url('../img/check-mark.svg');
+    line-height: 26px;
+    max-width: 450px;
 }
 
 .hero-list li {
@@ -121,4 +125,46 @@ header > ul {
 .hero-link {
     display: inline-block;
     margin-top: 30px;
+    padding: 12px 24px;
+    background-color: #efc8b1;
+    color: black;
+    border: 1px solid #efc8b1;
+    border-radius: 5px;
+    transition: color 0.2s ease;
+}
+
+.hero-link:hover {
+    box-shadow: 0 0 18px #efc8b1;
+}
+
+.advantagest-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 52px 0 80px;
+}
+
+.advantagest-title {
+    margin: 0 auto 42px;
+    max-width: 600px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #696969;
+}
+
+.advantagest-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.advantagest-list li {
+    max-width: 300px;
+}
+
+.advantagest-list li::before {
+    content: '';
+    background-image: url(../img/1pic.svg);
+    width: 106px;
+    height: 106px;
 }
