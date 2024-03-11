@@ -4,33 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сдать жилье</title>
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
     <header>
         <ul>
             <li>
-                <a href="#" class="header-logo">Интеграция</a>
+                <a href="index.html" class="header-logo">Интеграция</a>
             </li>
             <li>
                 <nav>
-                    <ul>
-                        <li>Главная</li>
-                        <li>Сдать жилье</li>
-                        <li>Контактная информация</li>
-                        <li>Ответы на вопросы</li>
-                        <li>Способ оплаты</li>
-                        <li>Отзывы</li>
+                    <ul class="header-nav">
+                        <li>
+                            <a href="index.html">Главная</a>
+                        </li>
+                        <li>
+                            <a class="active" href="rent_out.html">Сдать жилье</a>
+                        </li>
+                        <li>
+                            <a href="contacts.html">Контактная информация</a>
+                        </li>
+                        <li>
+                            <a href="questions.html">Ответы на вопросы</a>
+                        </li>
+                        <li>
+                            <a href="connection.html">Способ оплаты</a>
+                        </li>
+                        <li>
+                            <a href="reviews.html">Отзывы</a>
+                        </li>
                     </ul>
                 </nav>
             </li>
             <li>
-                <a href="tel:+79058037041">+79058037041</a>
+                <a href="tel:+79058037041" class="header-phone">+79058037041</a>
             </li>
             <li>
-                <a href="#" class="header-link">
+                <a href="mailto:otdel.kachestva.21@mail.ru" class="header-link">
                     Сообщение на почту
                 </a>
-                <a href="#" class="header-link">
+                <a href="account.html" class="header-link">
                     Личный кабинет
                 </a>
             </li>
@@ -63,35 +76,49 @@
             </form>
         </section>
     </main>
-    <footer>
-        <ul>
-            <li>
-                <h2>Интеграция</h2>
-            </li>
-            <li>
-                <nav>
-                    <ul>
-                        <li>Главная</li>
-                        <li>Сдать жилье</li>
-                        <li>Контактная информация</li>
-                        <li>Ответы на вопросы</li>
-                        <li>Способ оплаты</li>
-                        <li>Отзывы</li>
-                    </ul>
-                </nav>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="#" alt="">
-                </a>
-                <a href="#">
-                    <img src="#" alt="">
-                </a>
-                <a href="tel:+79058037041">
-                    <img src="#" alt="">
-                </a>
-            </li>
-        </ul>
+    <footer class="footer">
+        <div class="footer-container">
+            <ul class="footer-list">
+                <li>
+                    <h2 class="footer-logo">Интеграция</h2>
+                </li>
+                <li>
+                    <nav class="footer-nav">
+                        <ul class="footer-nav-list">
+                            <li>
+                                <a href="index.html">Главная</a>
+                            </li>
+                            <li>
+                                <a href="rent_out.html">Сдать жилье</a>
+                            </li>
+                            <li>
+                                <a href="contacts.html">Контактная информация</a>
+                            </li>
+                            <li>
+                                <a href="questions.html">Ответы на вопросы</a>
+                            </li>
+                            <li>
+                                <a href="connection.html">Способ оплаты</a>
+                            </li>
+                            <li>
+                                <a href="reviews.html">Отзывы</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </li>
+                <li>
+                    <a class="footer-mail" href="mailto:otdel.kachestva.21@mail.ru">
+                        <img src="/img/mail.svg" alt="">
+                    </a>
+                    <a class="footer-whatsapp" href="https://api.whatsapp.com/send?phone=79655202887">
+                        <img src="/img/whatsapp.svg" alt="">
+                    </a>
+                    <a class="footer-phone" href="tel:+79058037041">
+                        <img src="/img/phone.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
