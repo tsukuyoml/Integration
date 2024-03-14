@@ -1,0 +1,53 @@
+.hero {
+    position: relative;
+    background-image: url('/img/rent_out.jpg');
+    background-size: cover;
+    background-position: 50% 35%;
+    background-repeat: no-repeat;
+}
+
+.hero::before {
+    position: absolute;
+    content: '';
+    background-color: #0000008e;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-container {
+    position: relative;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 120px 0 120px;
+    z-index: 10;
+    color: white;
+}
+
+.hero-title {
+    font-size: 52px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.form-container {
+    margin: 0 auto;
+    max-width: 1140px;
+    padding: 30px 0;
+}
+
+.input-label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input-label div {
+    margin-bottom: 4px;
+    font-size: 18px;
+}
+
+.input {
+    padding: 10px;
+    width: 300px;
+}

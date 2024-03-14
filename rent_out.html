@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сдать жилье</title>
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/rent_out.css">
+    <link rel="stylesheet" href="/styles/footer.css">
 </head>
 <body>
     <header>
@@ -52,28 +55,30 @@
     <main>
         <section class="hero">
             <div class="hero-container">
-                <h2>
+                <h2 class="hero-title">
                     Сдайте свое жилье быстро! Оставьте заявку и наши специалисты свяжутся с вами в ближайшее время
                 </h2>
             </div>
         </section>
         <section class="form">
-            <form action="#" method="post">
-                <label>
-                    <div>Введите ваше имя</div>
-                    <input name="name" type="text">
-                </label>
-                <label>
-                    <div>Введите ваш номер телефона</div>
-                    <input name="phone" type="tel">
-                </label>
-                <label>
-                    <div>Введите сообщение</div>
-                    <textarea name="message" cols="10" rows="5"></textarea>
-                </label>
-                <a href="/files/Пользовательское соглашение.docx">Пользовательское соглашение</a>
-                <button type="submit">Отправить</button>
-            </form>
+            <div class="form-container">
+                <form action="#" method="post">
+                    <label class="input-label">
+                        <div>Введите ваше имя</div>
+                        <input name="name" type="text" class="input">
+                    </label>
+                    <label class="input-label">
+                        <div>Введите ваш номер телефона</div>
+                        <input name="phone" type="tel" class="input">
+                    </label>
+                    <label class="input-label">
+                        <div>Введите сообщение</div>
+                        <textarea name="message" cols="10" rows="5" class="text-input"></textarea>
+                    </label>
+                    <a href="/files/Пользовательское соглашение.docx">Пользовательское соглашение</a>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
         </section>
     </main>
     <footer class="footer">
