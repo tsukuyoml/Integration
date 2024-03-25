@@ -6,13 +6,24 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
+    height: 100%;
     font-family: "Montserrat", sans-serif;
 }
 
 a {
     text-decoration: none;
     color: white;
+}
+
+footer {
+    flex-grow: 1;
 }
