@@ -1,0 +1,57 @@
+.login {
+    padding: 52px 0;
+}
+
+.login-container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.login-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.login-content {
+    display: flex;
+    gap: 52px;
+}
+
+.login-content form {
+    width: 300px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 22px;
+}
+
+.input-label {
+    margin-bottom: 5px;
+}
+
+.input {
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;;
+}
+
+.login-button {
+    padding: 12px 24px;
+    background-color: #efc8b1;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #dbb198;
+}
+
+.login-info {
+    width: 500px;
+    color: #696969;
+}
