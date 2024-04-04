@@ -1,0 +1,84 @@
+.connection {
+    padding: 52px;
+}
+
+.connection-container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 52px;
+}
+
+.connection-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: #6d6d6d;
+}
+
+.connection-list li {
+    max-width: 350px;
+    line-height: 24px;
+}
+
+.connection-list li::before {
+    margin-bottom: 26px;
+    display: block;
+    content: '';
+    background-image: url('../img/1pic.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+}
+
+.connection-list li:nth-child(2)::before {
+    background-image: url('../img/2pic.svg');
+}
+
+.connection-list li:last-child::before {
+    background-image: url('../img/3pic.svg');
+}
+
+.payment {
+    background-color: #f3f3f3;
+    padding: 42px 0 52px;
+}
+
+.payment-container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.payment-content {
+    display: flex;
+    gap: 52px;
+}
+
+.payment-item {
+    padding: 35px 30px;
+    background-color: #efc8b1;
+    height: 400px;
+    width: 450px;
+}
+
+.payment-way {
+    margin-bottom: 20px;
+}
+
+.payment-qr {
+    display: block;
+    margin: 0 auto;
+}
+
+.payment-contract {
+    margin-top: 20px;
+}
+
+.payment-contract-link {
+    text-decoration: underline;
+    color: #682323;
+}
