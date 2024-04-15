@@ -61,7 +61,7 @@
 .payment-item {
     padding: 35px 30px;
     background-color: #efc8b1;
-    height: 400px;
+    min-height: 400px;
     width: 450px;
 }
 
@@ -79,6 +79,20 @@
 }
 
 .payment-contract-link {
+    display: block;
     text-decoration: underline;
     color: #682323;
+}
+
+.payment-item-content {
+    display: grid;
+    grid-template-columns: auto auto; 
+    gap: 20px 10px;
+}
+
+.payment-item-content a {
+    text-decoration: underline;
+    color: #682323;
+    letter-spacing: -1px;
+    font-size: 14px;
 }
