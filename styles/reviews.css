@@ -28,9 +28,19 @@
     box-shadow: 0 0 18px #d6ad95;
 }
 
+.reviews-content-wrapper {
+    display: flex;
+}
+
+.reviews-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    width: 50%;
+}
+
 .reviews-item {
-    display: inline-block;
-    width: 520px;
+    margin: 0 15px;
     border: 1px solid #000000a8;
     padding: 20px;
 }
