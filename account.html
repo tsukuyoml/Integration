@@ -58,14 +58,15 @@
                 <h2 class="login-title">Авторизация в личный кабинет</h2>
                 <div class="login-content">
                     <form action="#" method="post">
-                        <label class="label">
+                        <label class="login-label">
                             <div class="input-label">Логин</div>
                             <input placeholder="Ваш логин" name="login" type="text" class="input">
                         </label>
-                        <label class="label">
+                        <label class="password-label">
                             <div class="input-label">Пароль</div>
                             <input placeholder="Ваш пароль" name="password" type="text" class="input">
                         </label>
+                        <div class="error-message"></div>
                         <button type="submit" class="login-button">Войти</button>
                     </form>
                     <div class="login-info">
@@ -119,5 +120,6 @@
             </ul>
         </div>
     </footer>
+    <script src="/scripts/account.js"></script>
 </body>
 </html>

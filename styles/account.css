@@ -21,9 +21,14 @@
     width: 300px;
 }
 
-.label {
+.login-label {
     display: block;
     margin-bottom: 22px;
+}
+
+.password-label{
+    display: block;
+    margin-bottom: 10px;
 }
 
 .input-label {
@@ -37,7 +42,12 @@
     font-family: "Montserrat", sans-serif;;
 }
 
+.error-message {
+    color: rgb(173, 0, 0);
+}
+
 .login-button {
+    margin-top: 15px;
     padding: 12px 24px;
     background-color: #efc8b1;
     border: none;
