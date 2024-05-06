@@ -69,7 +69,8 @@
                     </label>
                     <label class="input-label">
                         <div>Введите ваш номер телефона</div>
-                        <input placeholder="Номер телефона" name="phone" type="tel" class="input">
+                        <input placeholder="+7 (952) 812-52-52" name="phone" pattern="" type="tel" class="input" id="phone-field">
+                        <p class="error-message"></p>
                     </label>
                     <label class="input-label">
                         <div>Введите сообщение</div>
@@ -127,5 +128,12 @@
             </ul>
         </div>
     </footer>
+    <div class="modal" id="rent_out_success">
+        <div class="modal-content">
+            <p>Запрос отправлен. В ближайшее время с вами свяжутся</p>
+            <button class="modal-button">ок</button>
+        </div>
+    </div>
+    <script src="/scripts/rent_out.js"></script>
 </body>
 </html>
