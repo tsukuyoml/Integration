@@ -6,8 +6,9 @@
     <title>Подключение</title>
     <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles/header.css">
-    <link rel="stylesheet" href="/styles/connection.css">
     <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="/styles/modal.css">
+    <link rel="stylesheet" href="/styles/connection.css">
 </head>
 <body>
     <header>
@@ -79,14 +80,13 @@
                     </div>
                     <div class="payment-item">
                         <div class="payment-item-content">
-                            <a href="#">Способ оплаты</a>
-                            <a href="#">Способ возврата</a>
-                            <a href="#">Способ предоставления услуги</a>
-                            <a href="#">Оплата</a>
-                            <a href="#">Что нужно знать</a>
-                            <a href="#">Оплата по счету</a>
-                            <a href="#">Тарифы</a>
-                            <a href="#">Реквизиты организации</a>
+                            <a href="" onclick="openModal(event, 'payment_way')">Способ оплаты</a>
+                            <a href="" onclick="openModal(event, 'refund')">Способ возврата</a>
+                            <a href="" onclick="openModal(event, 'services')">Способ предоставления услуги</a>
+                            <a href="" onclick="openModal(event, 'payment')">Оплата</a>
+                            <a href="" onclick="openModal(event, 'notes')">Что нужно знать</a>
+                            <a href="" onclick="openModal(event, 'account_payment')">Оплата по счету</a>
+                            <a href="" onclick="openModal(event, 'requisites')">Реквизиты организации</a>
                         </div>
                     </div>
                 </div>
@@ -137,4 +137,56 @@
             </ul>
         </div>
     </footer>
+    <div class="modal" id="payment_way" onclick="closeModal(event, 'payment_way')">
+        <div class="modal-content" onclick="stopAscoat(event)">
+            <p class="modal-text">Способ оплаты №1 - На сайте Сервиса поиска жилья, через вкладку подключение по номеру договора
+            </p>
+            <p class="modal-text">Способ оплаты №2 - На реквизиты юридического лица - инструкцию по оплате можно запросить у Вашего менеджера
+            </p>
+            <button class="modal-button" onclick="closeModal(event, 'payment_way')">ок</button>
+        </div>
+    </div>
+    <div class="modal" id="refund" onclick="closeModal(event, 'refund')">
+        <div class="modal-content" onclick="stopAscoat(event)">
+            <p class="modal-text">Денежные средства возвращаются при нарушении Исполнителем (Сервиса поиска жилья) своих обязанностей, предусмотренных в п. 3.1.1 - 3.1.5 договора. Если клиент считает, что услуга не была оказана в должном объеме, он вправе написать претензию, которая в соответствии с п. 6.8. договора рассматривается в течение 10 дней в соответствии с законодательством РФ. Претензию клиент может написать через раздел "Контакты в свободной форме."
+            </p>
+            <button class="modal-button" onclick="closeModal(event, 'refund')">ок</button>
+        </div>
+    </div>
+    <div class="modal" id="services" onclick="closeModal(event, 'services')">
+        <div class="modal-content" onclick="stopAscoat(event)">
+            <p class="modal-text">Клиенту направляется договор на оказание услуг (так же с шаблоном договора можно ознакомится во вкладке "Подключение" - окно где клиент вводит номер договора при оплате за услуги компании). Если вопросов по договору нет и клиенту все понятно, то менеджер направляет реквизиты для оплаты услуг в зависимости от возможностей клиента. После оплаты услуг компании клиенту автоматически на номер телефона поступает логин и пароль от доступа в личный кабинет. Авторизовавшись на сайте, клиент получает доступ ко всем актуальным предложениям от собственника по его критериям через вкладку "Снять жилье". Срок действия договора и доступ к сайту предоставляется в течение 30 календарных дней.</p>
+            <a href="/files/Правила обслуживания.pdf">Скачать правила обслуживания</a>
+            <button class="modal-button" onclick="closeModal(event, 'services')">ок</button>
+        </div>
+    </div>
+    <div class="modal" id="payment" onclick="closeModal(event, 'payment')">
+        <div class="modal-content" onclick="stopAscoat(event)">
+            <p class="modal-text">
+            </p>
+            <button class="modal-button" onclick="closeModal(event, 'payment')">ок</button>
+        </div>
+    </div>
+    <div class="modal" id="notes" onclick="closeModal(event, 'notes')">
+        <div class="modal-content" onclick="stopAscoat(event)">
+            <p class="modal-text">
+            </p>
+            <button class="modal-button" onclick="closeModal(event, 'notes')">ок</button>
+        </div>
+    </div>
+    <div class="modal" id="account_payment" onclick="closeModal(event, 'account_payment')">
+        <div class="modal-content" onclick="stopAscoat(event)">
+            <p class="modal-text">
+            </p>
+            <button class="modal-button" onclick="closeModal(event, 'account_payment')">ок</button>
+        </div>
+    </div>
+    <div class="modal" id="requisites" onclick="closeModal(event, 'requisites')">
+        <div class="modal-content" onclick="stopAscoat(event)">
+            <p class="modal-text">
+            </p>
+            <button class="modal-button" onclick="closeModal(event, 'requisites')">ок</button>
+        </div>
+    </div>
+    <script src="/scripts/connection.js"></script>
 </html>
