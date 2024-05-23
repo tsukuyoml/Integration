@@ -6,8 +6,9 @@
     <title>Отзывы</title>
     <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles/header.css">
-    <link rel="stylesheet" href="/styles/reviews.css">
     <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="/styles/modal.css">
+    <link rel="stylesheet" href="/styles/reviews.css">
 </head>
 <body>
     <header>
@@ -57,7 +58,7 @@
             <div class="reviews-container">
                 <div class="reviews-title-wrapper">
                     <h2 class="reviews-title">Отзывы</h2>
-                    <button class="reviews-button">Напиште отзыв о нас</button>
+                    <button class="reviews-button" onclick="openModal(event, 'review_form')">Напиште отзыв о нас</button>
                 </div>
                 <div class="reviews-content-wrapper">
                     <div class="reviews-content">
@@ -956,5 +957,45 @@
             </ul>
         </div>
     </footer>
+    <div class="modal" id="review_form" onclick="closeModal(event, 'review_form')">
+        <div class="modal-content" onclick="stopAscoat(event)">
+            <h3 class="modal-title">Напишите отзыв</h3>
+            <label class="full_name-label">
+                <div class="input-label">Ваше ФИО</div>
+                <input 
+                    placeholder="Иванов Иван Иванович" 
+                    name="full_name" 
+                    type="text" 
+                    class="input"
+                >
+            </label>
+            <div class="modal-row">
+                <label class="phone-label">
+                    <div class="input-label">Номер телефона</div>
+                    <input 
+                        placeholder="+7 (952) 812-52-52" 
+                        name="phone" 
+                        type="tel" 
+                        class="input"
+                    >
+                </label>
+                <label class="company-name-label">
+                    <div class="input-label">Сервис поиска жилья</div>
+                    <input 
+                        placeholder="Название" 
+                        name="company-name" 
+                        type="text" 
+                        class="input"
+                    >
+                </label>
+            </div>
+            <label>
+                <div class="input-label">Текст отзыва</div>
+                <textarea placeholder="Введите текст" name="review" cols="10" rows="7" class="text-input"></textarea>
+            </label>
+            <button class="modal-button" onclick="closeModal(event, 'review_form')">ок</button>
+        </div>
+    </div>
+    <script src="scripts/modal.js"></script>
 </body>
 </html>

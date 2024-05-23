@@ -156,8 +156,10 @@
     <div class="modal" id="services" onclick="closeModal(event, 'services')">
         <div class="modal-content" onclick="stopAscoat(event)">
             <p class="modal-text">Клиенту направляется договор на оказание услуг (так же с шаблоном договора можно ознакомится во вкладке "Подключение" - окно где клиент вводит номер договора при оплате за услуги компании). Если вопросов по договору нет и клиенту все понятно, то менеджер направляет реквизиты для оплаты услуг в зависимости от возможностей клиента. После оплаты услуг компании клиенту автоматически на номер телефона поступает логин и пароль от доступа в личный кабинет. Авторизовавшись на сайте, клиент получает доступ ко всем актуальным предложениям от собственника по его критериям через вкладку "Снять жилье". Срок действия договора и доступ к сайту предоставляется в течение 30 календарных дней.</p>
-            <a href="/files/Правила обслуживания.pdf">Скачать правила обслуживания</a>
-            <button class="modal-button" onclick="closeModal(event, 'services')">ок</button>
+            <div class="modal-footer">
+                <a class="services-rules" href="/files/Правила обслуживания.pdf">Скачать правила обслуживания</a>
+                <button class="modal-button" onclick="closeModal(event, 'services')">ок</button>
+            </div>
         </div>
     </div>
     <div class="modal" id="payment" onclick="closeModal(event, 'payment')">
@@ -188,5 +190,6 @@
             <button class="modal-button" onclick="closeModal(event, 'requisites')">ок</button>
         </div>
     </div>
-    <script src="/scripts/connection.js"></script>
+    <script src="/scripts/modal.js"></script>
+</body>
 </html>
