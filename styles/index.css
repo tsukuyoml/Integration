@@ -1,6 +1,6 @@
 .hero {
     position: relative;
-    background-image: url('/img/house.jpg');
+    background-image: url('../img/house.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -129,7 +129,7 @@
 
 .guarantees-list {
     margin-left: 20px;
-    list-style-image: url('/img/check-mark-guaranties.svg');
+    list-style-image: url('..img/check-mark-guaranties.svg');
 }
 
 .guarantees-list li {

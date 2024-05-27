@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Отзывы</title>
-    <link rel="stylesheet" href="/styles/reset.css">
-    <link rel="stylesheet" href="/styles/header.css">
-    <link rel="stylesheet" href="/styles/footer.css">
-    <link rel="stylesheet" href="/styles/modal.css">
-    <link rel="stylesheet" href="/styles/reviews.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="styles/reviews.css">
 </head>
 <body>
     <header>
@@ -945,13 +945,13 @@
                 </li>
                 <li>
                     <a class="footer-mail" href="mailto:otdel.kachestva.21@mail.ru">
-                        <img src="/img/mail.svg" alt="">
+                        <img src="img/mail.svg" alt="">
                     </a>
                     <a class="footer-whatsapp" href="https://api.whatsapp.com/send?phone=79655202887">
-                        <img src="/img/whatsapp.svg" alt="">
+                        <img src="img/whatsapp.svg" alt="">
                     </a>
                     <a class="footer-phone" href="tel:+79058037041">
-                        <img src="/img/phone.svg" alt="">
+                        <img src="img/phone.svg" alt="">
                     </a>
                 </li>
             </ul>
@@ -967,35 +967,48 @@
                     name="full_name" 
                     type="text" 
                     class="input"
+                    id="input-full_name"
                 >
             </label>
-            <div class="modal-row">
-                <label class="phone-label">
-                    <div class="input-label">Номер телефона</div>
-                    <input 
-                        placeholder="+7 (952) 812-52-52" 
-                        name="phone" 
-                        type="tel" 
-                        class="input"
-                    >
-                </label>
-                <label class="company-name-label">
-                    <div class="input-label">Сервис поиска жилья</div>
-                    <input 
-                        placeholder="Название" 
-                        name="company-name" 
-                        type="text" 
-                        class="input"
-                    >
-                </label>
-            </div>
+            <label class="phone-label">
+                <div class="input-label">Номер телефона</div>
+                <input 
+                    placeholder="+7 (952) 812-52-52" 
+                    name="phone" 
+                    type="tel" 
+                    class="input"
+                    id="input-phone"
+                >
+            </label>
+            <label class="company-name-label">
+                <div class="input-label">Сервис поиска жилья</div>
+                <input 
+                    placeholder="Название" 
+                    name="company-name" 
+                    type="text" 
+                    class="input"
+                    id="input-company-name"
+                >
+            </label>
+            
             <label>
                 <div class="input-label">Текст отзыва</div>
-                <textarea placeholder="Введите текст" name="review" cols="10" rows="7" class="text-input"></textarea>
+                <textarea placeholder="Введите текст" name="review" cols="10" rows="7" class="text-input" id="review-text-input"></textarea>
             </label>
-            <button class="modal-button" onclick="closeModal(event, 'review_form')">ок</button>
+            <button class="modal-button" onclick="sendMail(event)">ок</button>
         </div>
     </div>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "POmgVICWqC_rS3aMi",
+            });
+        })();
+        </script>
     <script src="scripts/modal.js"></script>
+    <script src="scripts/review.js"></script>
 </body>
 </html>
