@@ -989,13 +989,19 @@
                     class="input"
                     id="input-company-name"
                 >
-            </label>
-            
+            </label> 
             <label>
                 <div class="input-label">Текст отзыва</div>
                 <textarea placeholder="Введите текст" name="review" cols="10" rows="7" class="text-input" id="review-text-input"></textarea>
             </label>
+            <div class="error-message" ></div>
             <button class="modal-button" onclick="sendMail(event)">ок</button>
+        </div>
+    </div>
+    <div class="modal" id="success-message" onclick="closeModal(event, 'success-message')">
+        <div class="modal-content" onclick="stopAscoat(event)">
+            <p>Спасибо за ваш отзыв!</p>
+            <button class="modal-button" onclick="closeModal(event, 'success-message')">ок</button>
         </div>
     </div>
     <script type="text/javascript"

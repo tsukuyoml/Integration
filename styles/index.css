@@ -140,8 +140,32 @@
     margin-bottom: 0;
 }
 
+.partners {
+    padding: 52px 0;
+}
+
+.partners-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #696969;
+}
+
 .partners-list {
     display: flex;
+    align-items: center;
     width: 100%;
-    overflow: auto;
+    overflow-x: auto;
+    list-style: none;
+    gap: 100px;
+}
+
+.partners-list::-webkit-scrollbar {
+    display: none;
+}
+
+.partners-list-item img {
+    width: 125px;
+    height: auto;
 }
