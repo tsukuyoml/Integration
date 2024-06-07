@@ -1,3 +1,22 @@
+.video-reviews-container {
+    margin: 0 auto;
+    padding: 52px 0;
+}
+
+.video-reviews-title {
+    display: block;
+    max-width: 1140px;
+    margin: 0 auto 36px;
+    font-size: 36px;
+}
+
+.video-reviews-list {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    padding: 0 52px;
+}
+
 .reviews-container {
     max-width: 1140px;
     margin: 0 auto;

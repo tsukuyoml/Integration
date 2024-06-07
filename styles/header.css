@@ -1,5 +1,5 @@
 header {
-    padding: 36px 36px;
+    padding: 36px 52px;
     background-color: #514644;
     color: white;
 }
@@ -46,20 +46,4 @@ header > ul {
 
 .header-phone:hover {
     color: #efc8b1;
-}
-
-.header-link {
-    display: inline-block;
-    padding: 12px 24px;
-    border: 1px solid #efc8b1;
-    border-radius: 5px;
-    transition: background-color 0.2s ease;
-}
-
-.header-link:first-child {
-    margin-right: 10px;
-}
-
-.header-link:hover {
-    background-color: #efc8b14b;
 }

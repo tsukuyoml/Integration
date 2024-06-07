@@ -108,3 +108,8 @@
     border: 1px solid #682323;
     padding: 16px 28px;
 }
+
+.payment_partners {
+    display: block;
+    margin: 25px auto;
+}
