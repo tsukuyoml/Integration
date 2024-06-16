@@ -1,12 +1,17 @@
-const partnersList = document.querySelector('.partners-list');
-
-partnersList.addEventListener('wheel', function(evt) {
-    evt.preventDefault();
+function handleScroll(event, targetClass='') {
+    event.preventDefault();
     
-    if (isNaN(this.scrollLeft)) {
-        this.scrollLeft = 0;
+    let target;
+    if (targetClass.length === 0) {
+        target = event.currentTarget;
+    } else {
+        target = document.querySelector(targetClass);
+    }
+    
+    if (isNaN(target.scrollLeft)) {
+        target.scrollLeft = 0;
     }
 
-    this.scrollLeft += evt.deltaY;
-    console.log(this.scrollLeft, evt.deltaY)
-});
+    target.scrollLeft += event.deltaY;
+    console.log(target.scrollLeft, event.deltaY);
+};
