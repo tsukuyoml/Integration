@@ -1,5 +1,5 @@
 header {
-    padding: 36px 52px;
+    padding: 28px 74px;
     background-color: #514644;
     color: white;
 }
@@ -46,4 +46,10 @@ header > ul {
 
 .header-phone:hover {
     color: #efc8b1;
+}
+
+@media (max-width: 1450px) {
+    .header-nav {
+        max-width: 500px;
+    }
 }

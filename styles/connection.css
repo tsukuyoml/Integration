@@ -113,3 +113,28 @@
     display: block;
     margin: 25px auto;
 }
+
+.offer-container {
+    margin: 0 auto;
+    padding: 52px 0;
+    max-width: 1140px;
+}
+
+.contract-title {
+    font-size: 36px;
+    margin-bottom: 26px;
+}
+
+.offer-content {
+    margin: 0 auto;
+    width: 952px;
+    max-height: 500px;
+    padding: 16px;
+    border: 1px solid #682323;
+    overflow-y: auto;
+}
+
+.offer-document {
+    height: 100%;
+    
+}
