@@ -17,12 +17,14 @@ header > ul {
     color: #efc8b1;
 }
 
+
 .header-nav {
     display: flex;
     list-style: none;
     gap: 18px;
     flex-wrap: wrap;
-    justify-content: center
+    justify-content: center;
+    align-items: center;
 }
 
 .header-nav a {
@@ -39,6 +41,7 @@ header > ul {
 }
 
 .header-phone {
+    margin-left: 24px;
     font-size: 24px;
     font-weight: 500;
     transition: color 0.2s ease;
@@ -48,8 +51,116 @@ header > ul {
     color: #efc8b1;
 }
 
+.profile_icon {
+    margin-left: 24px;
+}
+
+.profile_icon span {
+    display: none;
+}
+
+.menu-label {
+    display: none;
+}
+
+#burger-menu {
+    display: none;
+}
+
 @media (max-width: 1450px) {
     .header-nav {
         max-width: 500px;
+    }
+}
+
+@media (max-width: 1100px) {
+    header > ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .header-menu {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    header >  ul > li:not(:first-child) {
+        display: none;  
+    }
+
+    .header-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-label {
+        position: relative;
+        display: block;
+        height: 25px;
+        width: 30px;
+    }
+    
+    .menu-label::before, 
+    .menu-label::after, 
+    .menu-label span {
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: #efc8b1;
+        transition: 0.3s;
+    }
+
+    .menu-label::before {
+        content: '';
+        top: 0;
+    }
+
+    .menu-label::after {
+        content: '';
+        bottom: 0;
+    }
+
+    .menu-label span {
+        top: 11px;
+    }
+
+    .header-menu:has(#burger-menu:checked) ~ li {
+        display: flex;
+    }
+    
+    #burger-menu:checked ~ label::before {
+        transform: rotate(45deg);
+        top: 12px;
+    }
+
+    #burger-menu:checked ~ label::after {
+        transform: rotate(45deg);
+        bottom: 10px;
+    }
+    
+    #burger-menu:checked ~ label span {
+        transform: rotate(-45deg);
+    }
+
+    .profile_icon {
+        padding: 12px 24px;
+        background-color: #efc8b1;
+        color: black;
+        border: 1px solid #efc8b1;
+        border-radius: 5px;
+        transition: color 0.2s ease;
+    }
+
+    .profile_icon:hover {
+        box-shadow: 0 0 18px #efc8b1;
+    }
+
+    .profile_icon span {
+        display: inline;
+    }    
+
+    .profile_icon img {
+        display: none;
     }
 }
