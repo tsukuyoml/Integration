@@ -164,3 +164,9 @@ header > ul {
         display: none;
     }
 }
+
+@media (max-width: 800px) {
+    header {
+        padding: 28px 32px;
+    }
+}

@@ -1,5 +1,5 @@
 .questions {
-    padding-top: 52px;
+    padding: 52px 36px 0;
 }
 
 .questions-container {
@@ -47,7 +47,7 @@
 }
 
 .services {
-    padding: 52px 0;
+    padding: 52px 36px;
 }
 
 .services-container {
@@ -71,4 +71,18 @@
 
 .services-article p:last-child {
     margin-bottom: 0;
+}
+
+@media (max-width: 500px) {
+    .section-title {
+        font-size: 28px;
+    }
+
+    .questions-item-title {
+        font-size: 18px;
+    }
+
+    .services-title {
+        font-size: 20px;
+    }
 }

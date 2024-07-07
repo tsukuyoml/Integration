@@ -1,5 +1,6 @@
 .connection {
-    padding: 52px;
+    padding: 52px 36px;
+    overflow: hidden;
 }
 
 .connection-container {
@@ -45,7 +46,8 @@
 
 .payment {
     background-color: #f3f3f3;
-    padding: 42px 0 52px;
+    padding: 42px 36px 52px;
+    overflow: hidden;
 }
 
 .payment-container {
@@ -109,9 +111,9 @@
     padding: 16px 28px;
 }
 
-.payment_partners {
-    display: block;
-    margin: 25px auto;
+.contract-offer {
+    padding: 0 36px;
+    overflow: hidden;
 }
 
 .offer-container {
@@ -127,7 +129,7 @@
 
 .offer-content {
     margin: 0 auto;
-    width: 952px;
+    max-width: 952px;
     max-height: 500px;
     padding: 16px;
     border: 1px solid #682323;
@@ -137,4 +139,14 @@
 .offer-document {
     height: 100%;
     
+}
+
+.partners {
+    margin: 25px auto;
+    padding: 0 36px;
+    width: 666px;
+}
+
+.payment_partners {
+    object-fit: cover;
 }

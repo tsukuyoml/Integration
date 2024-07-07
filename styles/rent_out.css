@@ -1,9 +1,11 @@
 .hero {
+    padding: 0 36px;
     position: relative;
     background-image: url('../img/rent_out.jpg');
     background-size: cover;
     background-position: 50% 35%;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .hero::before {
@@ -31,6 +33,11 @@
     margin-bottom: 30px;
 }
 
+.form {
+    padding: 0 36px;
+    overflow: hidden;
+}
+
 .form-container {
     margin: 0 auto;
     max-width: 1140px;
@@ -39,7 +46,7 @@
 
 .form-container form {
     margin: 0 auto;
-    width: 350px;
+    max-width: 350px;
 }
 
 .input-label {
@@ -94,4 +101,10 @@
 
 .button:hover {
     background-color: #dbb198;
+}
+
+@media (max-width: 1000px) {
+    .hero-title {
+        font-size: 40px;
+    }
 }
