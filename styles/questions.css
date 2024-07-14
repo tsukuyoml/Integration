@@ -1,8 +1,8 @@
-.questions {
-    padding: 52px 36px 0;
+.documents {
+    padding: 52px 36px;
 }
 
-.questions-container {
+.documents-container {
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -12,77 +12,54 @@
     margin-bottom: 30px;
 }
 
-.questions-list {
-    list-style: none;
-    background-color: #fafafa;
-    padding: 20px;
-    box-sizing: border-box;
-    border: 1px solid #2e2e2e6b;
-}
-
-.questions-list-item {
-    margin-bottom: 25px;
-}
-
-.questions-list-item:last-child {
-    margin-bottom: 0;
-}
-
-.questions-item-title {
-    margin-bottom: 10px;
-    color: #696969;
-    font-size: 22px;
-}
-
-.questions-item-content {
-    color: #6d6d6d;
-}
-
-.questions-item-content p {
-    margin-bottom: 10px;
-}
-
-.questions-item-content p:last-child {
-    margin-bottom: 0;
-}
-
-.services {
-    padding: 52px 36px;
-}
-
-.services-container {
-    max-width: 1140px;
+.documents-list {
     margin: 0 auto;
+    list-style: none;
+    max-width: 1000px;
 }
 
-.services-title {
-    margin-bottom: 10px;
-    font-size: 22px;
-    color: #696969;
+.documents-list li {
+    margin-bottom: 12px;
+    border: 2px solid #efc8b1;
+    border-radius: 5px;
 }
 
-.services-article {
-    color: #6d6d6d;
+.document-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    padding: 12px 24px;
+    background-color: #efc8b13c;
+    transition: background-color 0.2s ease;
 }
 
-.services-article p {
-    margin-bottom: 10px;
+.document-link:hover {
+    background-color: #efc8b180;
 }
 
-.services-article p:last-child {
-    margin-bottom: 0;
+.document-link::after {
+    display: inline-block;
+    content: '';
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.pdf .document-link::after {
+    background-image: url('../img/document-ofer-pdf.svg');
+}
+
+.docx .document-link::after {
+    background-image: url('../img/docx-document.svg');
 }
 
 @media (max-width: 500px) {
     .section-title {
         font-size: 28px;
-    }
-
-    .questions-item-title {
-        font-size: 18px;
-    }
-
-    .services-title {
-        font-size: 20px;
     }
 }
