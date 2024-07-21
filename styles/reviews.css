@@ -3,11 +3,41 @@
     padding: 52px 0;
 }
 
-.video-reviews-title {
-    display: block;
-    max-width: 1140px;
+.title-wrapper {
+    display: flex;
     margin: 0 auto 36px;
+    gap: 25px;
+    align-items: center;
+    max-width: 1140px;
+}
+
+.video-reviews-title {
     font-size: 36px;
+}
+
+.video-reviews-buttons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.scroll-btn {
+    display: block;
+    width: 50px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #efc8b1;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#left {
+    background-image: url('../img/left-scroll.svg');
+}
+
+#right {
+    background-image: url('../img/right-scroll.svg');
 }
 
 .video-reviews-list {
@@ -21,6 +51,10 @@
 
 .video-reviews-list li {
     display: block;
+}
+
+.video-reviews-list iframe {
+
 }
 
 .video-reviews-list::-webkit-scrollbar {

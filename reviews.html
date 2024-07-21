@@ -58,10 +58,16 @@
     <main>
         <section class="video-reviews">
             <div class="video-reviews-container">
-                <h2 class="video-reviews-title">
-                    Видео отзывы
-                </h2>
-                <ul class="video-reviews-list" onwheel="handleScroll(event);">
+                <div class="title-wrapper">
+                    <h2 class="video-reviews-title">
+                        Видео отзывы
+                    </h2>
+                    <div class="video-reviews-buttons">
+                        <button class="scroll-btn" id="left" onclick="moveLeft(event, '.video-reviews-list')"></button>
+                        <button class="scroll-btn" id="right" onclick="moveRight(event, '.video-reviews-list')"></button>
+                    </div>
+                </div>
+                <ul class="video-reviews-list">
                     <li>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/ffOITiGpYb8?si=V0S0gX8MwM56ye0e&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </li>
