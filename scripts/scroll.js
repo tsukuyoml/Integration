@@ -20,24 +20,26 @@ function moveLeft(event, targetClass) {
     event.preventDefault();
 
     let target = document.querySelector(targetClass);
+    let iframe = target.querySelector('iframe')
 
     if (isNaN(target.scrollLeft)) {
         target.scrollLeft = 0;
     };
 
-    target.scrollLeft += -100;
-    console.log(target.scrollLeft);
+    target.scrollLeft += -iframe.offsetWidth;
+    console.log(iframe.offsetWidth);
 }
 
 function moveRight(event, targetClass) {
     event.preventDefault();
 
     let target = document.querySelector(targetClass);
+    let iframe = target.querySelector('iframe')
 
     if (isNaN(target.scrollLeft)) {
         target.scrollLeft = 0;
     };
 
-    target.scrollLeft += 100;
-    console.log(target.scrollLeft);
+    target.scrollLeft += iframe.offsetWidth;
+    console.log(iframe.offsetWidth);
 }

@@ -159,6 +159,7 @@
     }
 
     .payment-item {
+        min-height: auto;
         max-width: 450px;
         width: 100%;
     }
