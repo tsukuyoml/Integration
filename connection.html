@@ -144,7 +144,7 @@
     </footer>
     <div class="modal" id="payment_way" onclick="closeModal(event, 'payment_way')">
         <div class="modal-content" onclick="stopAscoat(event)">
-            <p class="modal-text">Способ оплаты №1 - На сайте Сервиса поиска жилья, через вкладку подключение по номеру договора
+            <p class="modal-text">Способ оплаты №1 - На сайте Сервиса поиска жилья, через вкладку подключение по QR коду
             </p>
             <p class="modal-text">Способ оплаты №2 - На реквизиты юридического лица - инструкцию по оплате можно запросить у Вашего менеджера
             </p>
@@ -174,13 +174,31 @@
     <div class="modal" id="payment" onclick="closeModal(event, 'payment')">
         <div class="modal-content" onclick="stopAscoat(event)">
             <p class="modal-text">
+                Для вашего удобства мы используем различные системы оплаты заказов:
+                <ul class="payment-info">
+                    <li>1. Оплата наличными или банковской картой при получении заказа в магазине.</li>
+                    <li>2. Оплата счета через банк.</li>
+                    <li>3. Онлайн оплата заказа на сайте (оплата происходит через платежный шлюз ПАО "СБЕРБАНК").</li>
+                </ul>
             </p>
-            <button class="modal-button" onclick="closeModal(event, 'payment')">ок</button>
+            <p class="modal-text">
+                Оплата банковской картой
+                К оплате принимаются все виды платежных карточек VISA, за исключением Visa Electron. В большинстве случаев карта Visa Electron не применима для оплаты через интернет, за исключением карт, выпущенных отдельными банками. О возможность оплаты картой Visa Electron вам нужно выяснять у банка-эмитента вашей карты.
+            </p>
+                <button class="modal-button" onclick="closeModal(event, 'payment')">ок</button>
         </div>
     </div>
     <div class="modal" id="notes" onclick="closeModal(event, 'notes')">
         <div class="modal-content" onclick="stopAscoat(event)">
+            <p class="modal-text"> 
+                <h3>Что нужно знать:</h3>
+            </p>
+            <p class="modal-text">1. Номер вашей кредитной карты;</p>
+            <p class="modal-text">2. Срок окончания действия вашей кредитной карты, месяц/год;</p>
+            <p class="modal-text">3. CVV код для карт Visa / CVC код для Master Card: 3 последние цифры на полосе для подписи на обороте карты.</p>
             <p class="modal-text">
+                * Все операции с банковскими картами проводятся в соответствии с требованиями VISA International и MasterCard Worldwide. Безопасность платежей гарантируется использованием протокола SSL для передачи конфиденциальной информации.
+                Для оплаты (ввода реквизитов Вашей карты) Вы будете перенаправлены на платежный шлюз ПАО СБЕРБАНК. Соединение с платежным шлюзом и передача информации осуществляется в защищенном режиме с использованием протокола шифрования SSL. В случае, если Ваш банк поддерживает технологию безопасного проведения интернет-платежей Verified By Visa или MasterCard SecureCode, для проведения платежа также может потребоваться ввод специального пароля. Настоящий сайт поддерживает 256-битное шифрование. Конфиденциальность сообщаемой персональной информации обеспечивается ПАО СБЕРБАНК. Введенная информация не будет предоставлена третьим лицам за исключением случаев, предусмотренных законодательством РФ. Проведение платежей по банковским картам осуществляется в строгом соответствии с требованиями платежных систем МИР, Visa Int. и MasterCard Europe Sprl.
             </p>
             <button class="modal-button" onclick="closeModal(event, 'notes')">ок</button>
         </div>
@@ -188,13 +206,23 @@
     <div class="modal" id="account_payment" onclick="closeModal(event, 'account_payment')">
         <div class="modal-content" onclick="stopAscoat(event)">
             <p class="modal-text">
+                Если Вы являетесь юридическим лицом, при оформлении заказа Вы сможете распечатать счет.
             </p>
+            <p class="modal-text">После оформления заказа с вами свяжется наш менеджер.</p>
             <button class="modal-button" onclick="closeModal(event, 'account_payment')">ок</button>
         </div>
     </div>
     <div class="modal" id="requisites" onclick="closeModal(event, 'requisites')">
         <div class="modal-content" onclick="stopAscoat(event)">
             <p class="modal-text">
+                <ul class="payment-info">
+                    <li>Номер счёта: 40702810938230006590</li>
+                    <li>Название: ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ"ИНТЕГРАЦИЯ"</li>
+                    <li>ИНН: 6679152491</li>
+                    <li>КПП: 667901001</li>
+                    <li>Банк: ФИЛИАЛ "ЕКАТЕРИНБУРГСКИЙ" АО "АЛЬФА-БАНК"</li>
+                    <li>БИК: 046577964</li>
+                </ul>
             </p>
             <button class="modal-button" onclick="closeModal(event, 'requisites')">ок</button>
         </div>

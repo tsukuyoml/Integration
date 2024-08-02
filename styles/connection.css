@@ -153,6 +153,10 @@
     width: 100%;
 }
 
+.payment-info {
+    list-style: none;
+}
+
 @media (max-width: 520px) {
     .section-title {
         font-size: 28px;
