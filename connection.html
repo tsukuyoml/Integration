@@ -33,7 +33,7 @@
                             <a href="contacts.html">Контактная информация</a>
                         </li>
                         <li>
-                            <a href="questions.html">Документы</a>
+                            <a href="documents.html">Документы</a>
                         </li>
                         <li>
                             <a class="active" href="connection.html">Способ оплаты</a>
@@ -117,7 +117,7 @@
                                 <a href="contacts.html">Контактная информация</a>
                             </li>
                             <li>
-                                <a href="questions.html">Документы</a>
+                                <a href="documents.html">Документы</a>
                             </li>
                             <li>
                                 <a href="connection.html">Способ оплаты</a>
@@ -175,7 +175,7 @@
         <div class="modal-content" onclick="stopAscoat(event)">
             <p class="modal-text">
                 Для вашего удобства мы используем различные системы оплаты заказов:
-                <ul class="payment-info">
+                <ul class="payment-info modal-text">
                     <li>1. Оплата наличными или банковской картой при получении заказа в магазине.</li>
                     <li>2. Оплата счета через банк.</li>
                     <li>3. Онлайн оплата заказа на сайте (оплата происходит через платежный шлюз ПАО "СБЕРБАНК").</li>
@@ -190,9 +190,7 @@
     </div>
     <div class="modal" id="notes" onclick="closeModal(event, 'notes')">
         <div class="modal-content" onclick="stopAscoat(event)">
-            <p class="modal-text"> 
-                <h3>Что нужно знать:</h3>
-            </p>
+            <h3>Что нужно знать:</h3>
             <p class="modal-text">1. Номер вашей кредитной карты;</p>
             <p class="modal-text">2. Срок окончания действия вашей кредитной карты, месяц/год;</p>
             <p class="modal-text">3. CVV код для карт Visa / CVC код для Master Card: 3 последние цифры на полосе для подписи на обороте карты.</p>
@@ -214,16 +212,14 @@
     </div>
     <div class="modal" id="requisites" onclick="closeModal(event, 'requisites')">
         <div class="modal-content" onclick="stopAscoat(event)">
-            <p class="modal-text">
-                <ul class="payment-info">
-                    <li>Номер счёта: 40702810938230006590</li>
-                    <li>Название: ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ"ИНТЕГРАЦИЯ"</li>
-                    <li>ИНН: 6679152491</li>
-                    <li>КПП: 667901001</li>
-                    <li>Банк: ФИЛИАЛ "ЕКАТЕРИНБУРГСКИЙ" АО "АЛЬФА-БАНК"</li>
-                    <li>БИК: 046577964</li>
-                </ul>
-            </p>
+            <ul class="payment-info modal-text">
+                <li>Номер счёта: 40702810938230006590</li>
+                <li>Название: ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ"ИНТЕГРАЦИЯ"</li>
+                <li>ИНН: 6679152491</li>
+                <li>КПП: 667901001</li>
+                <li>Банк: ФИЛИАЛ "ЕКАТЕРИНБУРГСКИЙ" АО "АЛЬФА-БАНК"</li>
+                <li>БИК: 046577964</li>
+            </ul>
             <button class="modal-button" onclick="closeModal(event, 'requisites')">ок</button>
         </div>
     </div>

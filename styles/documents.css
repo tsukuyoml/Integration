@@ -58,8 +58,30 @@
     background-image: url('../img/docx-document.svg');
 }
 
+
+
 @media (max-width: 500px) {
     .section-title {
         font-size: 28px;
+    }
+    
+    .document-link {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 450px) {
+    .document-link {
+        overflow: hidden;
+    }
+    
+    .document-link::after{
+        display: none;
+    }
+}
+
+@media (max-width: 350px) {
+    .document-link {
+        font-size: 15px;
     }
 }

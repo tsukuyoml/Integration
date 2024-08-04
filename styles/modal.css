@@ -3,6 +3,7 @@
     position: fixed;
     align-items: center;
     justify-content: center;
+    padding: 36px 36px;
     left: 0;
     top: 0;
     width: 100%;
@@ -50,4 +51,10 @@
 
 .modal.open {
     visibility: visible;
+}
+
+@media (max-width: 520px) {
+    .modal-button {
+        font-size: 14px;
+    }
 }

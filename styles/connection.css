@@ -175,6 +175,31 @@
     .payment-qr {
         width: 100%;
     }
+
+    .modal-text {
+        font-size: 12px;
+    }
+
+    .services-rules {
+        padding: 10px 28px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 610px) {
+    .modal-footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .services-rules {
+        align-self: normal;
+    }
+    
+    .modal-button {
+        align-self: normal;
+    }
 }
 
 @media (max-width: 800px) {
@@ -195,5 +220,9 @@
     .payment-content {
         flex-direction: column;
         align-items: center;
+    }
+
+    .modal-text {
+        font-size: 14px;
     }
 }
