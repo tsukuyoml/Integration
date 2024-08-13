@@ -14,21 +14,18 @@
     visibility: hidden;
 }
 
-.modal-content {
+.modal-area {
     display: flex;
     flex-direction: column;
     line-height: 22px;
     gap: 18px;
     max-width: 500px;
+    max-height: 90dvh;
     padding: 35px;
     background-color: #fff;
     border-radius: 5px;
     z-index: 1000;
-}
-
-.modal-footer {
-    display: flex;
-    justify-content: space-between;
+    overflow-y: auto;
 }
 
 .modal-button {

@@ -142,7 +142,7 @@
 }
 
 .guarantees-list {
-    margin-left: 20px;
+    /* margin-left: 20px; */
     list-style-image: url('..img/check-mark-guaranties.svg');
 }
 
@@ -183,6 +183,47 @@
 .partners-list-item img {
     width: 125px;
     height: auto;
+}
+
+.guarantees {
+    position: relative;
+}
+
+.guarantees-container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1140px;
+    padding: 52px 0 60px;
+    z-index: 10;
+    color: white;
+}
+
+.guarantees-title {
+    font-size: 34px;
+    margin-bottom: 26px
+}
+
+.guarantees-list {
+    list-style: none;
+}
+
+.guarantees-list li {
+    margin-bottom: 13px;
+}
+
+.guarantees-list li::before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url('../img/check-mark-guaranties.svg');
+    background-size: contain;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.guarantees-list li:last-child {
+    margin-bottom: 0;
 }
 
 @media (max-width: 600px) {
